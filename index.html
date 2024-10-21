@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Language Course Registration</title>
+    <style>
+        body {
+            background-color: #F7DC6F;
+            background-image: url('pics.jpg');           
+        }
+    </style>
+</head>
+<body>
+    <h1> Language Course Registration</h1>
+    <div>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email"><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone"><br><br>
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+                <form action="/action_page.php">
+
+
+  <label for="course">Choose a course:</label>
+  <select name="course" id="course">
+    <option value="Korean">Korean</option>
+    <option value="Japanese">Japanese</option>
+    <option value="German">German</option>
+    <option value="Spanish">Spanish</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+  
+            </select><br><br>
+            <button onclick="confirmRegistration()">Register</button>
+        </form>
+        <p id="registration-message"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
